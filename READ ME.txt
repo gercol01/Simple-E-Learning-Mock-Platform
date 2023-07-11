@@ -1,0 +1,8 @@
+In this folder you shall find two pages = 'Home' and 'Main'.
+
+'Home' is the home page of C#Learn.
+'Main' contains the chapters and tasks.
+
+When viewing the website start by clicking on the 'Home.html' to access the home page.
+
+Website was coded with HTML and CSS.

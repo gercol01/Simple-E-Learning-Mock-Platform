@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content{
+    background-image: linear-gradient(to right, #eee3ff, #e4fff5);
+    flex: 1;
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+h1 {
+  color: #333;
+  font-size: 60px;
+}
+
+.content p {
+    margin-top: 10px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.my-button {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #04AA6D;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+.my-button:hover {
+    background-color: #00c97f;
+}
+
+.contentAndSidebar{
+    display: flex;
+    flex-direction: row;
+}
+
+.contentContainer{
+    background-image: linear-gradient(to right, #eee3ff, #e4fff5);
+    flex: 1;
+    padding: 40px;
+}
+
+.content2{
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.taskNavigation{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.taskNavigation li{
+    list-style-type: none;
+}
+
+.taskNavigation li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.taskNavigation li a:hover{
+    border-radius: 5px;
+    background-color: #ececec;
+}
+
+.titleBox2{
+    padding-left: 10px;
+    text-align: left;
+}
+
+.titleBox2 h1, h2, p{
+    margin-bottom: 10px;
+}
+
+.titleBox2 p{
+    line-height: 1.5;
+    width: 90%;
+}
+
+.titleBox a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #ececec;
+    border-radius: 3px;
+}
+
+.sidebar {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 240px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    padding-left: 40px;
+  }
+
+    .buttonOption{
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .buttonOption a{
+    margin-top: 40px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #04AA6D;
+    color: #fff  !important;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center
+  }
+
+  .buttonOption a:hover {
+    background-color: #00c97f;
+}
+  
+  .sidebar a {;
+    color: #333;
+    line-height: 1.5;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .sidebar li:hover {
+    background-color: #0000001a;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    postion:relative;
+    z-index: 1;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #666;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  
+  .image-container .image {
+    width: 110px;
+    margin: 0px 40px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-container .caption {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .image-container .description {
+    text-align: center;
+    margin-top: 5px;
+    color: #666;
+    font-size: 15px;
+    padding-left: -20px;
+    padding-right: -20px;
+  }

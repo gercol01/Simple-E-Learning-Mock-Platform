@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/b179535abe.js" crossorigin="anonymous"></script>
+  <title>C#Learn - Learn page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav>
+    <!-- Navigation bar content -->
+        <a href="Home.html">Home</a>
+        <a href="Main.html#section1">Get Started</a>
+  </nav>
+
+
+  <div class="contentAndSidebar">
+    <div class="sidebar">
+        <!-- Sidebar content goes here -->
+        <ul>
+          <li><a href="#section1" onclick="changeContent('sectiona')">Introduction to OOP</a></li>
+          <li><a href="#section2" onclick="changeContent('sectionb')">Introduction to .NET</a></li>
+          <li><a href="#section3" onclick="changeContent('sectionc')">Introduction to WinForms</a></li>
+
+          <div class="buttonOption">
+            <a  href="">Book a contact Hour</a>
+          <div>
+        </ul>
+    </div>
+    <div class="contentContainer">
+        <div class="content2" id = "content">
+            <ul class="taskNavigation">
+                <li><a href="#task1" onclick="changeTaskContent('task1a')">Task 1</a></li>
+                <li><a href="#task2" onclick="changeTaskContent('task2a')">Task 2</a></li>
+                <li><a href="#task3" onclick="changeTaskContent('task3a')">Task 3</a></li>
+            </ul>
+            <div class="titleBox2" id = "taskContent">
+                <h1>Task 1 - Inheritance</h1>
+                <p>This unit will introduce you to the basics of Object Oriented Programming (OOP). Below you 
+                    shall find plenty of resources to start learning the basics of Object Oriented Programming. 
+                    This unit is split into 3 sections, dividing Object Oriented Programming into chuncks easier for you to learn.
+                    You will also find a small task at the end of the page to implement what you have learned.
+                    Experts will give you feedback on this task so that you can continue to improve your work.
+                </p>
+                <br>
+                <br>
+                <h2>What is Inheritance in OOP?</h2>
+                <p>
+                    Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class to 
+                    inherit properties and behavior from another class. In C#, inheritance is implemented through the use of 
+                    classes and is achieved by defining a class based on another existing class, known as the base class or 
+                    parent class. The class that inherits from the base class is called the derived class or child class. 
+                    The derived class inherits all the members (fields, properties, methods, etc.) of the base class, including 
+                    both the public and protected members.
+                    <br>
+                    <br><b>Inheritance in C# provides several benefits:</b> 
+                    <br>1) Code Reusability: Inheritance allows you to reuse existing code by extending the functionality of the base class. The derived class automatically inherits the members of the base class, reducing code duplication.
+                    <br><br>2) Polymorphism: Inheritance supports polymorphism, which means that you can use objects of the derived class wherever the base class is expected. This allows for more flexible and modular code.
+                    <br><br>3) Hierarchy and Organization: Inheritance helps in organizing classes into a hierarchy, representing the relationships between different entities or concepts in your application.
+                </p><br><br>
+                <h2>Resources</h2>
+                <a href="https://www.w3schools.com/cs/cs_inheritance.php">C# Inheritance - W3 Schools</a><br>
+                <a href="https://www.youtube.com/watch?v=aWIrN50hVTo&t=2s">Object Oriented Programming 8 - Inheritance</a><br>
+                <br>
+                <p><b>ChatGPT Prompts:</b>
+                    <a href="https://chat.openai.com/">ChatGPT</a><br>
+                    "What is Inheritance in Object Oriented Programming?"<br>
+                    "Can you give me an example in C#?"<br>
+                    "When should Inheritance be used?>"<br>
+                    "Why is Inheritance important?"<br>
+                </p>
+                <br>
+                <br>
+                <h2>Task</h2>
+                <p>Given the concept of an Animal and a Cat, the Cat inherits from the Animal. 
+                    List down 5 characteristics/behaviours that you think the Cat concept would inherit from the Animal Concept.
+                    <br>
+                    For example, an Animal has an 'Eat' behavior that the Cat concept inherits.
+                    <br>
+                    <br>
+                <a href="" class="my-button">
+                    Submit your task
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <p>Contact us: gerard.coleiro@gmail.com</p>
+        <p>Phone: +356 9936 7859</p>
+        <p>&copy; 2023 My Simple Website. All rights reserved.</p>
+      </footer>
+    </html>
+</body>
+</html>
+
+
+<script>
+    function changeContent(section) {
+      var contentElement = document.getElementById("content");
+      var taskContentElement = document.getElementById("taskContent");
+      var content = "";
+      var taskContent = "";
+  
+      if (section === "sectiona") {
+        content = `<ul class="taskNavigation">
+                <li><a href="#task1" onclick="changeTaskContent('task1a')">Task 1</a></li>
+                <li><a href="#task2" onclick="changeTaskContent('task2a')">Task 2</a></li>
+                <li><a href="#task3" onclick="changeTaskContent('task3a')">Task 3</a></li>
+            </ul>
+            <div class="titleBox2" id = "taskContent">
+                <h1>Task 1 - Inheritance</h1>
+                <p>This unit will introduce you to the basics of Object Oriented Programming (OOP). Below you 
+                    shall find plenty of resources to start learning the basics of Object Oriented Programming. 
+                    This unit is split into 3 sections, dividing Object Oriented Programming into chuncks easier for you to learn.
+                    You will also find a small task at the end of the page to implement what you have learned.
+                    Experts will give you feedback on this task so that you can continue to improve your work.
+                </p>
+                <br>
+                <br>
+                <h2>What is Inheritance in OOP?</h2>
+                <p>
+                    Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class to 
+                    inherit properties and behavior from another class. In C#, inheritance is implemented through the use of 
+                    classes and is achieved by defining a class based on another existing class, known as the base class or 
+                    parent class. The class that inherits from the base class is called the derived class or child class. 
+                    The derived class inherits all the members (fields, properties, methods, etc.) of the base class, including 
+                    both the public and protected members.
+                    <br>
+                    <br><b>Inheritance in C# provides several benefits:</b> 
+                    <br>1) Code Reusability: Inheritance allows you to reuse existing code by extending the functionality of the base class. The derived class automatically inherits the members of the base class, reducing code duplication.
+                    <br><br>2) Polymorphism: Inheritance supports polymorphism, which means that you can use objects of the derived class wherever the base class is expected. This allows for more flexible and modular code.
+                    <br><br>3) Hierarchy and Organization: Inheritance helps in organizing classes into a hierarchy, representing the relationships between different entities or concepts in your application.
+                </p><br><br>
+                <h2>Resources</h2>
+                <a href="https://www.w3schools.com/cs/cs_inheritance.php">C# Inheritance - W3 Schools</a><br>
+                <a href="https://www.youtube.com/watch?v=aWIrN50hVTo&t=2s">Object Oriented Programming 8 - Inheritance</a><br>
+                <br>
+                <br>
+                <h2>Task</h2>
+                <p>Given the concept of an Animal and a Cat, the Cat inherits from the Animal. 
+                    List down 5 characteristics/behaviours that you think the Cat concept would inherit from the Animal Concept.
+                    <br>
+                    For example, an Animal has an 'Eat' behavior that the Cat concept inherits.
+                    <br>
+                    <br>
+                <a href="" class="my-button">
+                    Submit your task
+                </a>
+            </div>`;
+        }
+        else if (section === "sectionb") {
+            content = `<ul class="taskNavigation">
+                <li><a href="#task1" onclick="changeTaskContent('task1b')">Task 1</a></li>
+                <li><a href="#task2" onclick="changeTaskContent('task2b')">Task 2</a></li>
+                <li><a href="#task2" onclick="changeTaskContent('task3b')">Task 3</a></li>
+                <li><a href="#task2" onclick="changeTaskContent('task4b')">Task 4</a></li>
+            </ul>
+            <div class="titleBox2" id = "taskContent">
+                <h1>Task 1 - Hello World!</h1>
+                <p>This unit will introduce you to the basics of the C# programming language and the .NET Framework. Below you 
+                    shall find plenty of resources to start learning the basics of C#. 
+                    This unit is split into 4 sections, dividing C# into chuncks easier for you to learn.
+                    You will also find a small task at the end of the page to implement what you have learned.
+                    Experts will give you feedback on this task so that you can continue to improve your work.
+                </p>
+                <br>
+                <br>
+                <h2>What is the C# Programming Language?</h2>
+                <p>
+                    C# is a programming language developed by Microsoft that allows you to write instructions for a computer to follow. 
+                    It is part of the .NET framework and widely used for building a variety of applications, including desktop software, web applications, and mobile apps.
+                    <br><br>
+                    In simple terms, C# provides a way to communicate with a computer and tell it what to do. You can write C# code using a text editor or an integrated 
+                    development environment (IDE) like Visual Studio. The code you write is then compiled into an executable file that the computer can understand and execute.
+                    <br><br>
+                    C# is an object-oriented language, which means it focuses on creating objects that represent real-world entities and organizing code into reusable 
+                    components. It supports features like classes, objects, inheritance, and polymorphism, allowing you to build complex software systems.
+                    <br><br>
+                    C# provides a rich set of built-in features and libraries that make it easier to perform common programming tasks, such as working with strings, numbers, 
+                    files, databases, and graphical user interfaces (GUI). It also supports advanced concepts like asynchronous programming, LINQ (Language Integrated Query), 
+                    and parallel programming, which can enhance the performance and efficiency of your code.
+                    <br><br>
+                    Overall, C# is a powerful and versatile programming language that enables developers to create a wide range of applications with varying complexities, 
+                    from simple command-line tools to sophisticated enterprise-level systems.
+                </p><br><br>
+                <h2>My first program - Hello World</h2>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut quam vel libero tincidunt lobortis. Aliquam erat volutpat. Praesent non augue eu dui aliquet tincidunt. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Fusce auctor velit nec eros posuere, id pharetra nisl venenatis. 
+                Donec maximus diam eu sollicitudin elementum. Integer eget rutrum lectus, sed aliquam velit. Mauris fringilla nisi nec risus tincidunt, vitae eleifend lacus malesuada. 
+                Nulla at ligula eu odio dignissim ultrices. Integer dapibus risus turpis, vitae sollicitudin urna dignissim in. Sed mattis est at erat aliquet fringilla. Sed sem mi,
+                 pulvinar et tortor ac, facilisis malesuada mi. Ut tincidunt feugiat eros, id efficitur neque vestibulum nec. Curabitur fermentum leo nec sapien iaculis, eu convallis 
+                 mauris scelerisque.
+                 <p><br>
+                <h2>Resources</h2>
+                <a href="https://www.programiz.com/csharp-programming/hello-world">How to create Hello Worlds</a><br>
+                <a href="https://dotnet.microsoft.com/en-us/learn/dotnet/hello-world-tutorial/intro">Hello World in 5 Minutes C#</a><br>
+                <br>
+                <br>
+                <h2>Task</h2>
+                <p>Given the concept of an Animal and a Cat, the Cat inherits from the Animal. 
+                    List down 5 characteristics/behaviours that you think the Cat concept would inherit from the Animal Concept.
+                    <br>
+                    For example, an Animal has an 'Eat' behavior that the Cat concept inherits.
+                    <br>
+                    <br>
+                <a href="" class="my-button">
+                    Submit your task
+                </a>
+            </div>`;
+      } else if (section === "sectionc") {
+        content = "<h2>Introduction to WinForms</h2><p>This is the content for section 3.</p>";
+      }
+  
+        contentElement.innerHTML = content;
+      
+    }
+    function changeTaskContent(taskId) {
+        // Get the taskContent element
+        var taskContentElement = document.getElementById('taskContent');
+
+        // Update the taskContent based on the taskId
+        if (taskId === 'task1a') {
+            taskContentElement.innerHTML = `<h1>Task 1 - Inheritance</h1>
+                <p>This unit will introduce you to the basics of Object Oriented Programming (OOP). Below you 
+                    shall find plenty of resources to start learning the basics of Object Oriented Programming. 
+                    This unit is split into 3 sections, dividing Object Oriented Programming into chuncks easier for you to learn.
+                    You will also find a small task at the end of the page to implement what you have learned.
+                    Experts will give you feedback on this task so that you can continue to improve your work.
+                </p>
+                <br>
+                <br>
+                <h2>What is Inheritance in OOP?</h2>
+                <p>
+                    Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class to 
+                    inherit properties and behavior from another class. In C#, inheritance is implemented through the use of 
+                    classes and is achieved by defining a class based on another existing class, known as the base class or 
+                    parent class. The class that inherits from the base class is called the derived class or child class. 
+                    The derived class inherits all the members (fields, properties, methods, etc.) of the base class, including 
+                    both the public and protected members.
+                    <br>
+                    <br><b>Inheritance in C# provides several benefits:</b> 
+                    <br>1) Code Reusability: Inheritance allows you to reuse existing code by extending the functionality of the base class. The derived class automatically inherits the members of the base class, reducing code duplication.
+                    <br><br>2) Polymorphism: Inheritance supports polymorphism, which means that you can use objects of the derived class wherever the base class is expected. This allows for more flexible and modular code.
+                    <br><br>3) Hierarchy and Organization: Inheritance helps in organizing classes into a hierarchy, representing the relationships between different entities or concepts in your application.
+                </p><br><br>
+                <h2>Resources</h2>
+                <a href="https://www.w3schools.com/cs/cs_properties.php">C# Inheritance - W3 Schools</a><br>
+                <a href="https://www.youtube.com/watch?v=ZfdWelHydbQ">Object Oriented Programming Inheritance</a><br>
+                <br>
+                <br>
+                <h2>Task</h2>
+                <p>Given the concept of an Animal and a Cat, the Cat inherits from the Animal. 
+                    List down 5 characteristics/behaviours that you think the Cat concept would inherit from the Animal Concept.
+                    <br>
+                    For example, an Animal has an 'Eat' behavior that the Cat concept inherits.
+                    <br>
+                    <br>
+                <a href="" class="my-button">
+                    Submit your task
+                </a>
+            </div>`;
+        } else if (taskId === 'task2a') {
+            taskContentElement.innerHTML = `<h1>Task 2 - Encapsulation</h1>
+                <h2>What is Encapsulation in OOP?</h2>
+                <p>
+                    Encapsulation in C# is a fundamental principle of object-oriented programming (OOP) that combines data and behavior
+                     within a class and controls the access to that data. It is one of the pillars of OOP along with inheritance and polymorphism.
+                    <br>
+                    Encapsulation allows you to bundle related data (variables or fields) and methods (functions or behaviors) together as a 
+                    single unit called a class. By encapsulating data and methods together, you can hide the internal implementation details 
+                    and provide a well-defined interface or contract for interacting with the class.
+                    <br><br>
+                    <br><b>The main goals of encapsulation are:</b> 
+                    <br>1) Data Hiding: Encapsulation provides the ability to hide the internal state or data of an object 
+                    from the outside world. This is achieved by declaring data members as private or protected, which means they can only be accessed 
+                    or modified by the class itself or its derived classes. This helps in preventing direct manipulation of data and ensures that it is 
+                    accessed and modified through controlled methods.
+                    <br><br>2) Abstraction: Encapsulation allows you to present a simplified and abstract view of an object to the outside world. 
+                    The class exposes only necessary methods and properties that provide the desired functionality, while hiding the complex internal 
+                    implementation details. This helps in reducing complexity and making the usage of the class easier and more intuitive.
+                    <br><br>3) Data Protection and Validation: Encapsulation provides a way to enforce constraints and validation rules on the data within the class. 
+                    By encapsulating data and providing controlled access through methods, you can apply necessary checks, validations, and business rules to ensure 
+                    data integrity and consistency.
+                    <br><br>
+                    In C#, encapsulation is achieved using access modifiers (such as private, protected, public) to control the visibility and accessibility of class 
+                    members (fields, properties, methods). By default, class members are private unless specified otherwise.
+                    <br><br>
+                    Encapsulation promotes better organization and modularity in code, improves code maintainability, and helps in achieving the principles of encapsulation 
+                    and information hiding.
+                </p><br><br>
+                <h2>Resources</h2>
+                <a href="https://www.w3schools.com/cs/cs_inheritance.php">C# Encapsulation - W3 Schools</a><br>
+                <a href="https://www.youtube.com/watch?v=aWIrN50hVTo&t=2s">Object Oriented Programming 8 - Encapsulation</a><br>
+                <br>
+                <br>
+                <h2>Task</h2>
+                <p>Given the concept of an Animal and a Cat, the Cat inherits from the Animal. 
+                    List down 5 characteristics/behaviours that you think the Cat concept would inherit from the Animal Concept.
+                    <br>
+                    For example, an Animal has an 'Eat' behavior that the Cat concept inherits.
+                    <br>
+                    <br>
+                <a href="" class="my-button">
+                    Submit your task
+                </a>
+            </div>`;
+        } else if (taskId === 'task3a') {
+            taskContentElement.innerHTML = `<h1>Task 3 - Polymorphism</h1>
+                <h2>What is Polymorphism in OOP?</h2>
+                <p>
+                    Polymorphism is a fundamental concept in object-oriented programming (OOP) that allows objects of different classes to be treated as objects of a common superclass. 
+                    It enables a single interface or method to be used for objects of different types, providing flexibility and code reusability.
+                    <br><br>
+                    <br><b>Polymorphism in OOP can be achieved through two mechanisms: inheritance and interfaces.</b> 
+                    <br>1) Inheritance-based Polymorphism: Inheritance allows a subclass to inherit properties and methods from a superclass. Polymorphism comes into play when a superclass 
+                    defines a method, and one or more subclasses provide their own implementation of that method. The same method name can be used to perform different actions based on the 
+                    specific class of the object. This allows objects of different subclasses to be used interchangeably through the superclass reference.
+                    <br><br>2) Interface-based Polymorphism: Interfaces define a contract that classes can implement. Multiple classes can implement the same interface, and objects of these 
+                    classes can be referred to using the interface type. When multiple classes implement the same interface, they provide their own implementation of the interface's methods. 
+                    Objects of these classes can be used interchangeably through the interface reference, allowing different implementations of the same behavior.
+                    <br><br>
+                    The power of polymorphism lies in its ability to write code that can work with objects of different types, without the need to know their specific classes. This promotes code modularity, 
+                    flexibility, and extensibility in object-oriented systems, making it easier to add new classes or modify existing ones without affecting the overall functionality of the codebase.
+                </p><br><br>
+                <h2>Resources</h2>
+                <a href="https://www.w3schools.com/cs/cs_inheritance.php">Polymorphism - W3 Schools</a><br>
+                <a href="https://www.youtube.com/watch?v=aWIrN50hVTo&t=2s">Object Oriented Programming Polymorphism</a><br>
+                <br>
+                <br>
+                <h2>Task</h2>
+                <p>Given the concept of an Animal and a Cat, the Cat inherits from the Animal. 
+                    List down 5 characteristics/behaviours that you think the Cat concept would inherit from the Animal Concept.
+                    <br>
+                    For example, an Animal has an 'Eat' behavior that the Cat concept inherits.
+                    <br>
+                    <br>
+                <a href="" class="my-button">
+                    Submit your task
+                </a>
+            </div>`;
+        }
+        else if (taskId === 'task1b') {
+            taskContentElement.innerHTML = `<h1>Task 1 - Hello World!</h1>
+                <p>This unit will introduce you to the basics of the C# programming language and the .NET Framework. Below you 
+                    shall find plenty of resources to start learning the basics of C#. 
+                    This unit is split into 4 sections, dividing C# into chuncks easier for you to learn.
+                    You will also find a small task at the end of the page to implement what you have learned.
+                    Experts will give you feedback on this task so that you can continue to improve your work.
+                </p>
+                <br>
+                <br>
+                <h2>What is the C# Programming Language?</h2>
+                <p>
+                    C# is a programming language developed by Microsoft that allows you to write instructions for a computer to follow. 
+                    It is part of the .NET framework and widely used for building a variety of applications, including desktop software, web applications, and mobile apps.
+                    <br><br>
+                    In simple terms, C# provides a way to communicate with a computer and tell it what to do. You can write C# code using a text editor or an integrated 
+                    development environment (IDE) like Visual Studio. The code you write is then compiled into an executable file that the computer can understand and execute.
+                    <br><br>
+                    C# is an object-oriented language, which means it focuses on creating objects that represent real-world entities and organizing code into reusable 
+                    components. It supports features like classes, objects, inheritance, and polymorphism, allowing you to build complex software systems.
+                    <br><br>
+                    C# provides a rich set of built-in features and libraries that make it easier to perform common programming tasks, such as working with strings, numbers, 
+                    files, databases, and graphical user interfaces (GUI). It also supports advanced concepts like asynchronous programming, LINQ (Language Integrated Query), 
+                    and parallel programming, which can enhance the performance and efficiency of your code.
+                    <br><br>
+                    Overall, C# is a powerful and versatile programming language that enables developers to create a wide range of applications with varying complexities, 
+                    from simple command-line tools to sophisticated enterprise-level systems.
+                </p><br><br>
+                <h2>My first program - Hello World</h2>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut quam vel libero tincidunt lobortis. Aliquam erat volutpat. Praesent non augue eu dui aliquet tincidunt. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Fusce auctor velit nec eros posuere, id pharetra nisl venenatis. 
+                Donec maximus diam eu sollicitudin elementum. Integer eget rutrum lectus, sed aliquam velit. Mauris fringilla nisi nec risus tincidunt, vitae eleifend lacus malesuada. 
+                Nulla at ligula eu odio dignissim ultrices. Integer dapibus risus turpis, vitae sollicitudin urna dignissim in. Sed mattis est at erat aliquet fringilla. Sed sem mi,
+                 pulvinar et tortor ac, facilisis malesuada mi. Ut tincidunt feugiat eros, id efficitur neque vestibulum nec. Curabitur fermentum leo nec sapien iaculis, eu convallis 
+                 mauris scelerisque.
+                 <p><br>
+                <h2>Resources</h2>
+                <a href="https://www.programiz.com/csharp-programming/hello-world">How to create Hello Worlds</a><br>
+                <a href="https://dotnet.microsoft.com/en-us/learn/dotnet/hello-world-tutorial/intro">Hello World in 5 Minutes C#</a><br>
+                <br>
+                <br>
+                <h2>Task</h2>
+                <p>Given the concept of an Animal and a Cat, the Cat inherits from the Animal. 
+                    List down 5 characteristics/behaviours that you think the Cat concept would inherit from the Animal Concept.
+                    <br>
+                    For example, an Animal has an 'Eat' behavior that the Cat concept inherits.
+                    <br>
+                    <br>
+                <a href="" class="my-button">
+                    Submit your task
+                </a>`;
+        }
+        else if (taskId === 'task2b') {
+            taskContentElement.innerHTML = `<h1>Task 2 - Data types!</h1>
+                <p>This unit will introduce you to the basics of the C# programming language and the .NET Framework. Below you 
+                    shall find plenty of resources to start learning the basics of C#. 
+                    This unit is split into 4 sections, dividing C# into chuncks easier for you to learn.
+                    You will also find a small task at the end of the page to implement what you have learned.
+                    Experts will give you feedback on this task so that you can continue to improve your work.
+                </p>
+                <br>
+                <br>
+                <h2>What is the C# Programming Language?</h2>
+                <p>
+                    C# is a programming language developed by Microsoft that allows you to write instructions for a computer to follow. 
+                    It is part of the .NET framework and widely used for building a variety of applications, including desktop software, web applications, and mobile apps.
+                    <br><br>
+                    In simple terms, C# provides a way to communicate with a computer and tell it what to do. You can write C# code using a text editor or an integrated 
+                    development environment (IDE) like Visual Studio. The code you write is then compiled into an executable file that the computer can understand and execute.
+                    <br><br>
+                    C# is an object-oriented language, which means it focuses on creating objects that represent real-world entities and organizing code into reusable 
+                    components. It supports features like classes, objects, inheritance, and polymorphism, allowing you to build complex software systems.
+                    <br><br>
+                    C# provides a rich set of built-in features and libraries that make it easier to perform common programming tasks, such as working with strings, numbers, 
+                    files, databases, and graphical user interfaces (GUI). It also supports advanced concepts like asynchronous programming, LINQ (Language Integrated Query), 
+                    and parallel programming, which can enhance the performance and efficiency of your code.
+                    <br><br>
+                    Overall, C# is a powerful and versatile programming language that enables developers to create a wide range of applications with varying complexities, 
+                    from simple command-line tools to sophisticated enterprise-level systems.
+                </p><br><br>
+                <h2>My first program - Hello World</h2>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut quam vel libero tincidunt lobortis. Aliquam erat volutpat. Praesent non augue eu dui aliquet tincidunt. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Fusce auctor velit nec eros posuere, id pharetra nisl venenatis. 
+                Donec maximus diam eu sollicitudin elementum. Integer eget rutrum lectus, sed aliquam velit. Mauris fringilla nisi nec risus tincidunt, vitae eleifend lacus malesuada. 
+                Nulla at ligula eu odio dignissim ultrices. Integer dapibus risus turpis, vitae sollicitudin urna dignissim in. Sed mattis est at erat aliquet fringilla. Sed sem mi,
+                 pulvinar et tortor ac, facilisis malesuada mi. Ut tincidunt feugiat eros, id efficitur neque vestibulum nec. Curabitur fermentum leo nec sapien iaculis, eu convallis 
+                 mauris scelerisque.
+                 <p><br>
+                <h2>Resources</h2>
+                <a href="https://www.programiz.com/csharp-programming/hello-world">How to create Hello Worlds</a><br>
+                <a href="https://dotnet.microsoft.com/en-us/learn/dotnet/hello-world-tutorial/intro">Hello World in 5 Minutes C#</a><br>
+                <br>
+                <br>
+                <h2>Task</h2>
+                <p>Given the concept of an Animal and a Cat, the Cat inherits from the Animal. 
+                    List down 5 characteristics/behaviours that you think the Cat concept would inherit from the Animal Concept.
+                    <br>
+                    For example, an Animal has an 'Eat' behavior that the Cat concept inherits.
+                    <br>
+                    <br>
+                <a href="" class="my-button">
+                    Submit your task
+                </a>`;
+        }
+    }
+  </script>
